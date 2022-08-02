@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  background: linear-gradient(to right, #4c3ae3, #51e1ed);
+  font-family: "Montserrat";
+  color: #ffffff;
+}
+
+.bg {
+  height: 100vh;
+  width: 100vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation: backInDown 1s;
+}
+
+/* selects all the elements inside form */
+.form > * {
+  font-family: "Montserrat";
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+}
+
+.form input[type="email"] {
+  font-size: 22px;
+  color: #1b1b1b;
+  padding: 12px 30px;
+  width: 35%;
+}
+
+.form input[type="email"]:focus {
+  border: 3px solid #303030;
+}
+
+.form input[type="submit"] {
+  background-color: #3cba96;
+  color: #ffffff;
+  font-size: 27px;
+  padding: 12px 35px;
+  margin-top: 30px;
+  transition: box-shadow ease-in-out 120ms;
+}
+
+.form input[type="submit"]:hover {
+  box-shadow: 0 0 30px 30px #303030 inset;
+  animation: pulse 300ms linear 1 forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
